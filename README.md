@@ -29,11 +29,11 @@ El proyecto sigue los principios de **Clean Architecture**, dividiéndose en tre
 2.  **Domain:** Lógica de negocio pura (Entities, Repository Interfaces y Use Cases).
 3.  **Presentation:** Fragments, ViewModels y Adapters, siguiendo el patrón MVVM.
 
-<img width="720" height="1612" alt="Screenshot_20260624_222407" src="https://github.com/user-attachments/assets/4705bade-f048-4c78-b95c-125dfcc36700" width="600" />
+![imagen](https://github.com/user-attachments/assets/4705bade-f048-4c78-b95c-125dfcc36700)
 
-<img width="720" height="1612" alt="Screenshot_20260624_222809" src="https://github.com/user-attachments/assets/9e86938d-49fe-40e6-ae90-1bffe67cbb6a"  width="600"/>
+![imagen](https://github.com/user-attachments/assets/9e86938d-49fe-40e6-ae90-1bffe67cbb6a)
 
-<img width="720" height="1612" alt="Screenshot_20260624_222841" src="https://github.com/user-attachments/assets/608c0b23-3d07-4b1c-af09-19f2c70e7173"  width="600"/>
+![imagen](https://github.com/user-attachments/assets/608c0b23-3d07-4b1c-af09-19f2c70e7173)
 
 
 
