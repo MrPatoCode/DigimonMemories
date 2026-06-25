@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondary_yellow"
+    tools:context=".presentation.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/memories_of_a_digimon"
+        android:textColor="@color/main_gray"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:layout_marginTop="38dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/never_forget_a_friend"
+        android:textColor="@color/secondary_gray"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_start"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/secondary_blue"
+        android:paddingEnd="14dp"
+        android:text="@string/start"
+        android:textAlignment="center"
+        android:textColor="@color/secondary_yellow"
+        android:textSize="24sp"
+        app:cornerRadius="8dp"
+        app:icon="@drawable/icon_play"
+        app:iconGravity="textEnd"
+        app:iconSize="24dp"
+        app:iconTint="@color/secondary_yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sub_title" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_list"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/secondary_blue"
+        app:icon="@drawable/icon_git"
+        app:iconSize="30dp"
+        android:textAlignment="center"
+        app:iconTint="@color/secondary_yellow"
+        app:iconGravity="textEnd"
+        android:text="Digimon list"
+        android:textColor="@color/secondary_yellow"
+        android:textSize="24sp"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_start" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_score"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/secondary_blue"
+        app:icon= "@drawable/icon_score"
+        app:iconSize="28dp"
+        app:iconTint="@color/secondary_yellow"
+        app:iconGravity="textEnd"
+        android:text="@string/score"
+        android:textColor="@color/secondary_yellow"
+        android:textSize="24sp"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_list" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

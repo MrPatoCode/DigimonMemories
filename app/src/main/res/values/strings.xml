@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Digimon Memories</string>
+    <string name="error_network">There is no internet connection</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="list_of_digimon">List of Digimon</string>
+    <string name="exit_button">Exit button</string>
+    <string name="digimon">Digimon</string>
+    <string name="tag_name">Name:</string>
+    <string name="level">Level:</string>
+    <string name="memories_of_a_digimon">Memories of a Digimon</string>
+    <string name="never_forget_a_friend">Never forget a friend</string>
+    <string name="unknown_error">Unknown error: </string>
+    <string name="memory">Memory</string>
+    <string name="start">Start</string>
+    <string name="score">Score</string>
+    <string name="find_the_digimon">Find the digimon</string>
+    <string name="exit_the_game">Exit the game</string>
+    <string name="your_statistics_will_be_lost">Your statistics will be lost.</string>
+    <string name="accept">Accept</string>
+    <string name="resume">Resume</string>
+    <string name="start_the_game">Start the game</string>
+    <string name="end_the_game">End the game</string>
+    <string name="cancel">Cancel</string>
+    <string name="memorise_and_find">Memorise and find the Digimon</string>
+    <string name="good_luck">Good Luck!</string>
+    <string name="again">Again</string>
+    <string name="final_score">"Digimon found: "</string>
+    <string name="hint_used">Hint used</string>
+    <string name="card_of_the_game">Card of the game</string>
+    <string name="success">Success</string>
+    <string name="errors">Errors:</string>
+    <string name="attempts">Attempts:</string>
+    <string name="level_score">Level:</string>
+    <string name="error_save">Error saving statistics</string>
+    <string name="saving">Saving statistics</string>
+    <string name="saving_success">Saved statistics</string>
+    <string name="error_statistics">Error obtaining statistics</string>
+    <string name="no_statistics">No statistics are available</string>
+    <string name="attempts_button">Attempts</string>
+    <string name="errors_button">Errors</string>
+    <string name="levels_button">Levels</string>
+
+</resources>
