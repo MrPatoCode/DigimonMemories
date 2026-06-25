@@ -89,17 +89,17 @@ class ConfirmationDialog: DialogFragment() {
                 binding.btnCancel.text = getString(R.string.cancel)
             }
 
-            AppConstants.DIALOG_END -> {
-                binding.tvTitle.text = getString(R.string.end_the_game)
-                binding.subTitle.text = getString(R.string.final_score) + score
+            AppConstants.DIALOG_DELETE -> {
+                binding.tvTitle.text = getString(R.string.score_delete)
+                binding.subTitle.text = getString(R.string.are_you_sure_delete)
 
-                var color = ContextCompat.getColor(requireContext(), R.color.main_blue)
+                var color = ContextCompat.getColor(requireContext(), R.color.alert_orange)
                 binding.btnAccept.backgroundTintList = ColorStateList.valueOf(color)
                 binding.btnAccept.text = getString(R.string.accept)
 
-                color = ContextCompat.getColor(requireContext(), R.color.main_green)
+                color = ContextCompat.getColor(requireContext(), R.color.main_blue)
                 binding.btnCancel.backgroundTintList = ColorStateList.valueOf(color)
-                binding.btnCancel.text = getString(R.string.again)
+                binding.btnCancel.text = getString(R.string.cancel)
             }
         }
 

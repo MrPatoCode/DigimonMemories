@@ -39,5 +39,7 @@
     <string name="attempts_button">Attempts</string>
     <string name="errors_button">Errors</string>
     <string name="levels_button">Levels</string>
+    <string name="score_delete">Remove Score</string>
+    <string name="are_you_sure_delete">Are you sure you want to delete the score?</string>
 
 </resources>

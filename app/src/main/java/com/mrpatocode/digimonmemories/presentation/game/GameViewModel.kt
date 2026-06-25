@@ -70,7 +70,6 @@ class GameViewModel @Inject constructor(
     }
 
     fun incrementSuccess() {
-        // Obtenemos el valor actual de forma segura usando ?: para evitar nulos
         val currentSuccess = (_successes.value ?: 0) + 1
         _successes.value = currentSuccess
 

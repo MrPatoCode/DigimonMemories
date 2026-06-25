@@ -13,11 +13,14 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.mrpatocode.digimonmemories.R
 import com.mrpatocode.digimonmemories.databinding.FragmentScoreBinding
+import com.mrpatocode.digimonmemories.domain.model.Score
+import com.mrpatocode.digimonmemories.presentation.common.dialog.ConfirmationDialog
+import com.mrpatocode.digimonmemories.util.AppConstants
 import com.mrpatocode.digimonmemories.util.Resource
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class ScoreFragment : Fragment() {
+class ScoreFragment : Fragment(), ConfirmationDialog.DialogListener {
     private lateinit var _binding: FragmentScoreBinding
     private val binding get() = _binding
 
@@ -26,6 +29,8 @@ class ScoreFragment : Fragment() {
     private var orderSuccess: Boolean = true
     private var orderAttempts: Boolean = true
     private var orderErrors: Boolean = true
+
+    private lateinit var selectScore: Score
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -119,7 +124,9 @@ class ScoreFragment : Fragment() {
                     val list = resource.data.orEmpty()
                     val adapter = ScoreAdapter(
                         onDeleteClickListener = {
-                            scoreViewModel.deleteScore(it)
+                            selectScore = it
+                            openDialog(AppConstants.DIALOG_DELETE)
+                            //scoreViewModel.deleteScore(it)
                         }
                     )
 
@@ -134,5 +141,21 @@ class ScoreFragment : Fragment() {
                 }
             }
         }
+    }
+
+    private fun openDialog(type: String) {
+        val dialog = ConfirmationDialog.newInstance(mode = type)
+        dialog.isCancelable = false
+        dialog.show(childFragmentManager, AppConstants.DIALOG_TAG_CONFIRMATION)
+    }
+
+    override fun onAccept(dialog: String) {
+        if (dialog == AppConstants.DIALOG_DELETE){
+            scoreViewModel.deleteScore(selectScore)
+        }
+    }
+
+    override fun onCancel(dialog: String) {
+
     }
 }
